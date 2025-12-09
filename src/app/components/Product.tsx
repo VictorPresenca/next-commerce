@@ -14,10 +14,10 @@ return (
             <p className="w-40 truncate">
             {product.title}
             </p>
-            </div>
             <p className="text-md text-teal-300">
                 {product.price}
             </p>
+            </div>
         <button className="rounded-md bg-teal-600 text-white px-3.5 py-2.5 text-sm text-center">
             Adicionar ao carrinho
         </button>
