@@ -11,5 +11,12 @@ generator client {
 
 datasource db {
   provider  = "postgresql"
-  url  	    = env("DATABASE_URL")
+}
+
+model user {
+  id Int @id @default(autoincrement())
+  externalId String @unique
+  attributes Json
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
